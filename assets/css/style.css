@@ -76,16 +76,62 @@ header {
     color: white;
     font-weight: 600; }
 
+.portfolio .menu_portfolio {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0; }
+  .portfolio .menu_portfolio ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto 0; }
 .portfolio .row {
-  padding: 25px 0; }
-  .portfolio .row div {
-    position: relative;
-    overflow: hidden;
-    width: 270px;
-    height: 270px; }
-    .portfolio .row div img {
-      position: absolute;
-      bottom: 0;
-      left: 100; }
+  padding-bottom: 30px; }
+
+.video {
+  background-color: #515f67;
+  color: white; }
+  .video .row {
+    padding: 80px 0; }
+    .video .row h2 {
+      padding-bottom: 40px; }
+    .video .row p {
+      padding-bottom: 0.5rem;
+      font-size: 14px; }
+    .video .row a {
+      color: #353f46;
+      padding: 15px 40px;
+      border: 2px #353f46 solid; }
+
+.twitter {
+  background-color: #4bcaff;
+  color: white; }
+  .twitter .row {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0; }
+  .twitter .content_title {
+    display: flex;
+    justify-content: space-between; }
+  .twitter .content_text {
+    font-size: 28px;
+    padding-top: 40px;
+    line-height: 2; }
+
+.photographer {
+  background-image: url("../images/background_photographe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white; }
+  .photographer h2 {
+    padding-top: 100px; }
+  .photographer .row {
+    padding-top: 50px;
+    padding-bottom: 175px; }
+    .photographer .row .content_text .text_top {
+      padding-bottom: 35px; }
+    .photographer .row .content_logo .logo {
+      padding-top: 35px; }
 
 /*# sourceMappingURL=style.css.map */
