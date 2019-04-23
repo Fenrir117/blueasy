@@ -15,41 +15,52 @@
 </head>
 
 <body>
-    <header class="container-fluid">
-        <nav class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>BLU<span>E</span>ASY</h1>
-                </div>
-                <div class="col">
-                    <ul class="d-flex justify-content-between">
-                        <li>HOME</li>
-                        <li>SERVICES</li>
-                        <li>FEATURES</li>
-                        <li>PORTFOLIO</li>
-                        <li>CONTACT</li>
+    <header class="container-fluid full-header">
+        <div class="container-fluid bg-header">
+            <nav class="container navbar navbar-expand-md navbar-dark">
+                <a class="navbar-brand" id="logo" href="#">BLU<span>E</span>ASY</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href=".hero">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=".services">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=".video">FEATURES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=".portfolio">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=".contact">CONTACT</a>
+                        </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-
-    </header>
-    <section class="container-fluid hero">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <h2 class="titleTop">"I'M LOOKING FOR THE UNEXPECTED.</h2>
-                    <h2 class="titleBottom">I'M LOOKING FOR THINGS I'VE NEVER SEEN BEFORE."</h2>
-                </div>
-            </div>
+            </nav>
         </div>
-    </section>
+
+
+
+        <div class="text-center hero">
+
+            <h1><span class="titleTop">“I’M LOOKING FOR THE UNEXPECTED.</span><br>
+                <span class="titleBottom">I’M LOOKING FOR THINGS I’VE NEVER SEEN BEFORE.”</span>
+            </h1>
+
+        </div>
+    </header>
 
     <section class="container-fluid services">
         <div class="container">
             <h2>SERVICES</h2>
             <div class="row">
-                <div class="col coffee">
+                <div class="col-12 col-md-6 col-lg-3 coffee">
 
                     <img src="assets/images/logo_coffee.png" alt="Logo representant un mug de café" width="34"
                         height="48">
@@ -58,7 +69,7 @@
                         Jujubes
                         carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
                 </div>
-                <div class="col instant">
+                <div class="col-12 col-md-6 col-lg-3 instant">
                     <img src="assets/images/logo_instant.png" alt="Logo representant un mug de café" width="48"
                         height="48">
                     <h3>INSTANT</h3>
@@ -66,7 +77,7 @@
                         Jujubes
                         carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
                 </div>
-                <div class="col serious">
+                <div class="col-12 col-md-6 col-lg-3 serious">
                     <img src="assets/images/logo_serious.png" alt="Logo representant un mug de café" width="47"
                         height="45">
                     <h3>SERIOUS</h3>
@@ -74,7 +85,7 @@
                         Jujubes
                         carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
                 </div>
-                <div class="col frame">
+                <div class="col-12 col-md-6 col-lg-3 frame">
                     <img src="assets/images/logo_frame.png" alt="Logo representant un mug de café" width="48"
                         height="48">
                     <h3>FRAME</h3>
@@ -88,6 +99,106 @@
 
     <section class="container-fluid portfolio">
         <div class="container">
+            <div class="row">
+                    <div class="title_portfolio col-6">
+         
+                <h2>PORTFOLIO</h2>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light col-6">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myBtnContainer" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="myBtnContainer">
+                  
+                            <div class="col-6 d-flex collapse " id="myBtnContainer">
+                                    <button class="btn active" onclick="filterSelection('all')"> ALL</button>
+                                    <button class="btn" onclick="filterSelection('panorama')"> PANORAMA</button>
+                                    <button class="btn" onclick="filterSelection('portraits')"> PORTRAITS</button>
+                                    <button class="btn" onclick="filterSelection('macro')"> MACRO</button>
+                                    <button class="btn" onclick="filterSelection('journal')"> JOURNAL</button>
+                                </div>
+             
+                    </div>
+                  </nav>
+                <!-- <div class="col-6 d-flex justify-content-end " id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> ALL</button>
+                    <button class="btn" onclick="filterSelection('panorama')"> PANORAMA</button>
+                    <button class="btn" onclick="filterSelection('portraits')"> PORTRAITS</button>
+                    <button class="btn" onclick="filterSelection('macro')"> MACRO</button>
+                    <button class="btn" onclick="filterSelection('journal')"> JOURNAL</button>
+                </div> -->
+            </div>
+
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+                <div class="column col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-3 journal">
+                    <div class="content">
+                        <img class="img-fluid" src="assets/images/portfolio_img1.jpg" alt="Photo d'un pont caché sous les nuages"
+                            width="270" height="270">
+                    </div>
+                </div>
+
+                <div class="column col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-3 journal">
+                    <div class="content">
+                        <img class="img-fluid" src="assets/images/portfolio_img2.jpg"
+                            alt="Photo d'un pont qui serpente au dessus de l'eau" width="270" height="270">
+                    </div>
+                </div>
+
+                <div class="column col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-3 macro">
+                    <div class="content">
+                        <img class="img-fluid" src="assets/images/portfolio_img3.jpg" alt="Photo de rocher sortant de l'eau" width="270"
+                            height="270">
+                    </div>
+                </div>
+
+                <div class="column col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-3 macro">
+                    <div class="content">
+                        <img class="img-fluid" src="assets/images/portfolio_img4.jpg"
+                            alt="Photo d'un lac avec un arbre sur une îles en second plan" width="270" height="270">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="column col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-3 portraits">
+                    <div class="content">
+                        <img class="img-fluid" src="assets/images/portfolio_img5.jpg"
+                            alt="Photo d'un chalet en bois au milieu de la forêt" width="270" height="270">
+                    </div>
+                </div>
+
+                <div class="column col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-3 portraits">
+                    <div class="content">
+                        <img class="img-fluid" src="assets/images/portfolio_img6.jpg"
+                            alt="Photo d'un surfeur en train de surfer, il ce trouve en bas de la vague" width="270"
+                            height="270">
+                    </div>
+                </div>
+
+                <div class="column col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-3 panorama">
+                    <div class="content">
+                        <img class="img-fluid" src="assets/images/portfolio_img7.jpg" alt="Photo de pic de montagne" width="270"
+                            height="270">
+                    </div>
+                </div>
+
+                <div class="column col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-3 panorama">
+                    <div class="content">
+                        <img class="img-fluid" src="assets/images/portfolio_img8.jpg" alt="Photo d'e pic d'une seul montagne" width="270"
+                            height="270">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END GRID -->
+
+
+    <!-- 
+    <section class="container-fluid portfolio">
+        <div class="container">
             <div class="menu_portfolio">
                 <h2>PORTFOLIO</h2>
                 <ul>
@@ -98,42 +209,36 @@
                     <li>JOURNAL</li>
                 </ul>
             </div>
-            <div class="row">
-                <!-- <div></div>
-                <div></div>
-                <div></div>
-                <div></div> -->
-                <div class="col-3"><img src="assets/images/portfolio_img1.jpg"
+             <div class="row">
+
+                <div class="col-12 col-md-6 col-lg-3"><img src="assets/images/portfolio_img1.jpg"
                         alt="Photo d'un pont caché sous les nuages" width="270" height="270"></div>
-                <div class="col-3"><img src="assets/images/portfolio_img2.jpg"
+                <div class="col-12 col-md-6 col-lg-3"><img src="assets/images/portfolio_img2.jpg"
                         alt="Photo d'un pont qui serpente au dessus de l'eau" width="270" height="270"></div>
-                <div class="col-3"> <img src="assets/images/portfolio_img3.jpg" alt="Photo de rocher sortant de l'eau"
-                        width="270" height="270"></div>
-                <div class="col-3"> <img src="assets/images/portfolio_img4.jpg"
+                <div class="col-12 col-md-6 col-lg-3"> <img src="assets/images/portfolio_img3.jpg"
+                        alt="Photo de rocher sortant de l'eau" width="270" height="270"></div>
+                <div class="col-12 col-md-6 col-lg-3"> <img src="assets/images/portfolio_img4.jpg"
                         alt="Photo d'un lac avec un arbre sur une îles en second plan" width="270" height="270"></div>
-            </div>
-            <div class="row">
-                <!-- <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div> -->
-                <div class="col-3"> <img src="assets/images/portfolio_img5.jpg"
+            </div> -->
+    <!-- <div class="row">
+
+                <div class="col-12 col-md-6 col-lg-3"> <img src="assets/images/portfolio_img5.jpg"
                         alt="Photo d'un chalet en bois au milieu de la forêt" width="270" height="270"></div>
-                <div class="col-3"> <img src="assets/images/portfolio_img6.jpg"
+                <div class="col-12 col-md-6 col-lg-3"> <img src="assets/images/portfolio_img6.jpg"
                         alt="Photo d'un surfeur en train de surfer, il ce trouve en bas de la vague" width="270"
                         height="270"></div>
-                <div class="col-3"> <img src="assets/images/portfolio_img7.jpg" alt="Photo de pic de montagne"
-                        width="270" height="270"></div>
-                <div class="col-3"> <img src="assets/images/portfolio_img8.jpg" alt="Photo d'e pic d'une seul montagne"
-                        width="270" height="270"></div>
-            </div>
+                <div class="col-12 col-md-6 col-lg-3"> <img src="assets/images/portfolio_img7.jpg"
+                        alt="Photo de pic de montagne" width="270" height="270"></div>
+                <div class="col-12 col-md-6 col-lg-3"> <img src="assets/images/portfolio_img8.jpg"
+                        alt="Photo d'e pic d'une seul montagne" width="270" height="270"></div>
+            </div> 
         </div>
-    </section>
+    </section> -->
 
     <section class="container-fluid video">
         <div class="container">
             <div class="row">
-                <div class="col-5">
+                <div class="col-12 col-sm-12 col-sm col-md-5">
                     <h2>JUST DEFAULT SECTION</h2>
                     <p>
                         Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi bears
@@ -147,9 +252,8 @@
                     </p>
                     <a href="#">VISIT ME</a>
                 </div>
-                <div class="offset-1 col-6">
-                    <object data="https://player.vimeo.com/video/251273391" width="100%" height="100%"
-                        type="video"></object>
+                <div class="col-12 col-sm-12 offset-md-1 col-md-6">
+                    <object data="https://player.vimeo.com/video/251273391" width="100%" height="100%" type=""></object>
                 </div>
             </div>
         </div>
@@ -175,7 +279,7 @@
         <div class="container">
             <h2>WHO IS JOHN DOE?</h2>
             <div class="row">
-                <div class="col-6 content_text">
+                <div class="col-12 offset-md-2 col-md-8 offset-lg-0 col-lg-6 content_text">
                     <p class="text_top"> claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry
                         gummi bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream
                         wafer
@@ -187,7 +291,7 @@
                         canes toffee.
                     </p>
                 </div>
-                <div class="col-6 content_logo">
+                <div class="col-12 offset-md-2 col-md-8 offset-lg-0 col-lg-6 content_logo">
                     <p>
                         Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake. Sesame snaps sugar
                         plum cotton candy chocolate bonbon lemon drops candy canes cotton candy. Cake toffee pie bear
@@ -224,15 +328,15 @@
     <section class="container-fluid contact">
         <div class="container">
             <h2>CONTACT</h2>
-            <div class="row">
-                <div class="col-5 input_form">
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-12 col-md-6 input_form">
                     <label for="name">FULL NAME</label>
                     <input type="text" id="name" name="name">
 
                     <label for="email">EMAIL</label>
                     <input type="text" id="email" name="email">
                 </div>
-                <div class="offset-1 col-6">
+                <div class="col-12 col-md-6">
                     <p>Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop halvah
                         tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes
                         bear claw donut chupa chups.
@@ -251,7 +355,7 @@
                     <label for="message">MESSAGE</label>
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <button><a href="#">MESSAGE</a></button>
                 </div>
             </div>
@@ -287,6 +391,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

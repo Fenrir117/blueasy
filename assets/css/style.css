@@ -9,49 +9,36 @@ a {
 li {
   list-style-type: none; }
 
-header {
-  background-color: rgba(145, 145, 145, 0.8);
-  position: fixed;
-  height: 150px;
-  z-index: 2; }
-  header nav {
-    height: 100%; }
-    header nav .row {
-      height: 100%; }
-      header nav .row div {
-        margin: auto; }
-      header nav .row h1 {
-        color: white; }
-        header nav .row h1 span {
-          color: #6fa2cc; }
-      header nav .row ul {
-        color: white;
-        height: 100%;
-        margin-bottom: inherit; }
-        header nav .row ul li {
-          margin: auto; }
-
-.hero {
+.full-header {
   background-image: url("../images/background_header.jpg");
   background-repeat: no-repeat;
-  background-size: cover; }
-  .hero .container {
-    height: 100%; }
-    .hero .container .row {
-      padding: 400px 0 260px 0; }
-      .hero .container .row h2 {
-        text-align: center;
-        color: white;
-        background-color: rgba(145, 145, 145, 0.8);
-        font-family: "Segoe UI";
-        font-weight: 300;
-        font-size: 42px; }
-      .hero .container .row .titleTop {
-        width: 62%;
-        margin: 10px auto; }
-      .hero .container .row .titleBottom {
-        width: 88%;
-        margin: auto; }
+  background-size: cover;
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+  .full-header .bg-header {
+    background-color: rgba(145, 145, 145, 0.8);
+    height: 120px;
+    position: fixed !important;
+    z-index: 5; }
+    .full-header .bg-header nav {
+      height: 100%; }
+      .full-header .bg-header nav .nav-link {
+        color: white !important; }
+
+.hero {
+  padding: 400px 0 260px 0; }
+  .hero h1 {
+    color: white;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 1.8; }
+  .hero .titleTop {
+    background-color: rgba(145, 145, 145, 0.8);
+    margin: auto; }
+  .hero .titleBottom {
+    background-color: rgba(145, 145, 145, 0.8);
+    margin: auto; }
 
 .services {
   background-color: #4bcaff; }
@@ -59,7 +46,7 @@ header {
     padding-bottom: 80px; }
   .services h2 {
     font-size: 30px;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI";
     color: white;
     font-weight: 300;
     padding: 80px 0 40px 0; }
@@ -75,17 +62,17 @@ header {
     color: white;
     font-weight: 600; }
 
-.portfolio .menu_portfolio {
-  display: flex;
-  justify-content: space-between;
+.portfolio .titre_portfolio {
   padding: 80px 0; }
-  .portfolio .menu_portfolio ul {
+  .portfolio .titre_portfolio ul {
     display: flex;
     justify-content: space-between;
     width: 50%;
     margin: auto 0; }
 .portfolio .row {
   padding-bottom: 30px; }
+  .portfolio .row img {
+    width: 100%; }
 
 .video {
   background-color: #515f67;
@@ -190,5 +177,45 @@ footer {
   background-color: #353f46; }
   footer .row {
     justify-content: space-between; }
+
+/* Add padding BETWEEN each column (if you want) */
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+  /* Hide columns by default */ }
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px; }
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block; }
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer; }
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd; }
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
