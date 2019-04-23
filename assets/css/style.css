@@ -20,10 +20,25 @@ li {
     height: 120px;
     position: fixed !important;
     z-index: 5; }
+    .full-header .bg-header #logo {
+      font-size: 30px; }
+      .full-header .bg-header #logo span {
+        color: #6fa2cc; }
     .full-header .bg-header nav {
       height: 100%; }
       .full-header .bg-header nav .nav-link {
-        color: white !important; }
+        color: white !important;
+        border: 2px transparent solid;
+        padding: 11px;
+        font-size: 14px; }
+      .full-header .bg-header nav .active {
+        color: #4bcaff !important;
+        border: 2px #4bcaff solid;
+        padding: 11px; }
+      .full-header .bg-header nav .nav-link:hover {
+        color: #4bcaff !important;
+        border: 2px #4bcaff solid;
+        padding: 11px; }
 
 .hero {
   padding: 400px 0 260px 0; }
@@ -62,17 +77,19 @@ li {
     color: white;
     font-weight: 600; }
 
-.portfolio .titre_portfolio {
+.portfolio .title_portfolio {
   padding: 80px 0; }
-  .portfolio .titre_portfolio ul {
+  .portfolio .title_portfolio ul {
     display: flex;
     justify-content: space-between;
     width: 50%;
     margin: auto 0; }
-.portfolio .row {
-  padding-bottom: 30px; }
-  .portfolio .row img {
-    width: 100%; }
+.portfolio .row img {
+  width: 100%; }
+.portfolio .row .column {
+  padding: 0; }
+.portfolio .rowBottom {
+  padding-bottom: 80px; }
 
 .video {
   background-color: #515f67;
@@ -209,13 +226,22 @@ footer {
   background-color: white;
   cursor: pointer; }
 
+.btn:focus {
+  box-shadow: none; }
+
 /* Add a grey background color on mouse-over */
 .btn:hover {
-  background-color: #ddd; }
+  color: #4bcaff !important;
+  border: 2px #4bcaff solid;
+  padding: 11px; }
+
+.active_portfolio {
+  color: #4bcaff !important;
+  border: 2px #4bcaff solid;
+  padding: 11px; }
 
 /* Add a dark background color to the active button */
 .btn.active {
-  background-color: #666;
-  color: white; }
+  color: black; }
 
 /*# sourceMappingURL=style.css.map */

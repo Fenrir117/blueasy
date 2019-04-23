@@ -14,8 +14,8 @@
     <title>Document</title>
 </head>
 
-<body>
-    <header class="container-fluid full-header">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header class="container-fluid full-header" id="section_home">
         <div class="container-fluid bg-header">
             <nav class="container navbar navbar-expand-md navbar-dark">
                 <a class="navbar-brand" id="logo" href="#">BLU<span>E</span>ASY</a>
@@ -26,19 +26,19 @@
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href=".hero">HOME <span class="sr-only">(current)</span></a>
+                            <a class="nav-link active" href="#section_home">HOME <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href=".services">SERVICES</a>
+                            <a class="nav-link" href="#section_services">SERVICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href=".video">FEATURES</a>
+                            <a class="nav-link" href="#section_video">FEATURES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href=".portfolio">PORTFOLIO</a>
+                            <a class="nav-link" href="#section_portfolio">PORTFOLIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href=".contact">CONTACT</a>
+                            <a class="nav-link" href="#section_contact">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -56,7 +56,7 @@
         </div>
     </header>
 
-    <section class="container-fluid services">
+    <section class="container-fluid services " id="section_services">
         <div class="container">
             <h2>SERVICES</h2>
             <div class="row">
@@ -97,36 +97,21 @@
         </div>
     </section>
 
-    <section class="container-fluid portfolio">
+    <section class="container-fluid portfolio" id="section_portfolio">
         <div class="container">
-            <div class="row">
-                    <div class="title_portfolio col-6">
+            <div class="row title_portfolio">
+                    <div class=" col-6">
          
                 <h2>PORTFOLIO</h2>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light col-6">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myBtnContainer" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="myBtnContainer">
-                  
-                            <div class="col-6 d-flex collapse " id="myBtnContainer">
-                                    <button class="btn active" onclick="filterSelection('all')"> ALL</button>
-                                    <button class="btn" onclick="filterSelection('panorama')"> PANORAMA</button>
-                                    <button class="btn" onclick="filterSelection('portraits')"> PORTRAITS</button>
-                                    <button class="btn" onclick="filterSelection('macro')"> MACRO</button>
-                                    <button class="btn" onclick="filterSelection('journal')"> JOURNAL</button>
-                                </div>
-             
-                    </div>
-                  </nav>
-                <!-- <div class="col-6 d-flex justify-content-end " id="myBtnContainer">
-                    <button class="btn active" onclick="filterSelection('all')"> ALL</button>
+            <div class="col-6 d-flex collapse " id="myBtnContainer">
+                    <button class="btn active_portfolio" onclick="filterSelection('all')"> ALL</button>
                     <button class="btn" onclick="filterSelection('panorama')"> PANORAMA</button>
                     <button class="btn" onclick="filterSelection('portraits')"> PORTRAITS</button>
                     <button class="btn" onclick="filterSelection('macro')"> MACRO</button>
                     <button class="btn" onclick="filterSelection('journal')"> JOURNAL</button>
-                </div> -->
+                </div>
+
             </div>
 
             <!-- Portfolio Gallery Grid -->
@@ -161,7 +146,7 @@
             </div>
 
 
-            <div class="row">
+            <div class="row rowBottom">
                 <div class="column col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-3 portraits">
                     <div class="content">
                         <img class="img-fluid" src="assets/images/portfolio_img5.jpg"
@@ -195,47 +180,7 @@
     </section>
     <!-- END GRID -->
 
-
-    <!-- 
-    <section class="container-fluid portfolio">
-        <div class="container">
-            <div class="menu_portfolio">
-                <h2>PORTFOLIO</h2>
-                <ul>
-                    <li>HOME</li>
-                    <li>PANORAMA</li>
-                    <li>PORTRAITS</li>
-                    <li>MACRO</li>
-                    <li>JOURNAL</li>
-                </ul>
-            </div>
-             <div class="row">
-
-                <div class="col-12 col-md-6 col-lg-3"><img src="assets/images/portfolio_img1.jpg"
-                        alt="Photo d'un pont caché sous les nuages" width="270" height="270"></div>
-                <div class="col-12 col-md-6 col-lg-3"><img src="assets/images/portfolio_img2.jpg"
-                        alt="Photo d'un pont qui serpente au dessus de l'eau" width="270" height="270"></div>
-                <div class="col-12 col-md-6 col-lg-3"> <img src="assets/images/portfolio_img3.jpg"
-                        alt="Photo de rocher sortant de l'eau" width="270" height="270"></div>
-                <div class="col-12 col-md-6 col-lg-3"> <img src="assets/images/portfolio_img4.jpg"
-                        alt="Photo d'un lac avec un arbre sur une îles en second plan" width="270" height="270"></div>
-            </div> -->
-    <!-- <div class="row">
-
-                <div class="col-12 col-md-6 col-lg-3"> <img src="assets/images/portfolio_img5.jpg"
-                        alt="Photo d'un chalet en bois au milieu de la forêt" width="270" height="270"></div>
-                <div class="col-12 col-md-6 col-lg-3"> <img src="assets/images/portfolio_img6.jpg"
-                        alt="Photo d'un surfeur en train de surfer, il ce trouve en bas de la vague" width="270"
-                        height="270"></div>
-                <div class="col-12 col-md-6 col-lg-3"> <img src="assets/images/portfolio_img7.jpg"
-                        alt="Photo de pic de montagne" width="270" height="270"></div>
-                <div class="col-12 col-md-6 col-lg-3"> <img src="assets/images/portfolio_img8.jpg"
-                        alt="Photo d'e pic d'une seul montagne" width="270" height="270"></div>
-            </div> 
-        </div>
-    </section> -->
-
-    <section class="container-fluid video">
+    <section class="container-fluid video" id="section_video">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-sm col-md-5">
@@ -325,7 +270,7 @@
         </div>
     </section>
 
-    <section class="container-fluid contact">
+    <section class="container-fluid contact" id="section_contact">
         <div class="container">
             <h2>CONTACT</h2>
             <div class="row flex-column-reverse flex-md-row">
