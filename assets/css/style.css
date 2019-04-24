@@ -140,11 +140,15 @@ li {
       justify-content: space-between; }
       .photographer .row .content_logo .logo {
         margin-top: 35px; }
-        .photographer .row .content_logo .logo i {
+        .photographer .row .content_logo .logo a {
           margin-right: 20px;
           border: 2px white solid;
           padding: 20px;
           font-size: 30px; }
+        .photographer .row .content_logo .logo a:hover {
+          color: #4bcaff;
+          border: 2px #4bcaff solid;
+          background-color: rgba(250, 250, 250, 0.9); }
 
 .testimonial {
   color: #515f67; }

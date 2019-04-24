@@ -205,13 +205,20 @@ li {
       .logo {
         margin-top: 35px;
 
-        i {
+        a {
           margin-right: 20px;
           border: 2px white solid;
           padding: 20px;
           font-size: 30px;
         }
+        a:hover{
+          color: rgb(75, 202, 255);
+          border: 2px rgb(75, 202, 255) solid;
+          background-color: rgba(250, 250, 250, 0.9);
+        }
       }
+
+
     }
   }
 }
