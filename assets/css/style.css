@@ -1,10 +1,21 @@
+@import "https://cdn.jsdelivr.net/npm/segoe-fonts@1.0.1/segoe-fonts.min.css";
 * {
   margin: 0;
   padding: 0; }
 
+body {
+  font-family: 'Segoe UI'; }
+
 a {
   text-decoration: none;
   color: inherit; }
+
+h2 {
+  font-family: 'Segoe UI Light';
+  font-size: 30px; }
+
+p {
+  font-family: 'Segoe UI'; }
 
 li {
   list-style-type: none; }
@@ -44,7 +55,7 @@ li {
   padding: 400px 0 260px 0; }
   .hero h1 {
     color: white;
-    font-family: "Segoe UI";
+    font-family: "Segoe UI Light";
     font-weight: 300;
     font-size: 42px;
     line-height: 1.8; }
@@ -57,14 +68,18 @@ li {
 
 .services {
   background-color: #4bcaff; }
+  .services .hr_title {
+    border-top: 2px white solid;
+    width: 50px; }
   .services .row {
     padding-bottom: 80px; }
-  .services h2 {
-    font-size: 30px;
-    font-family: "Segoe UI";
-    color: white;
-    font-weight: 300;
+  .services .title_h2 {
     padding: 80px 0 40px 0; }
+    .services .title_h2 h2 {
+      font-size: 30px;
+      font-family: "Segoe UI";
+      color: white;
+      font-weight: 300; }
   .services h3 {
     font-size: 24px;
     font-family: "Segoe UI";
@@ -79,11 +94,22 @@ li {
 
 .portfolio .title_portfolio {
   padding: 80px 0; }
-  .portfolio .title_portfolio ul {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin: auto 0; }
+  .portfolio .title_portfolio .hr_title {
+    border-top: 2px black solid;
+    width: 50px; }
+  .portfolio .title_portfolio #myBtnContainer {
+    justify-content: flex-end; }
+    @media only screen and (max-width: 768px) {
+      .portfolio .title_portfolio #myBtnContainer button {
+        font-size: 12px; } }
+.portfolio .row .content {
+  position: relative; }
+.portfolio .row .hover {
+  position: absolute;
+  top: 10px;
+  display: none; }
+.portfolio .row .content:hover .hover {
+  display: block; }
 .portfolio .row img {
   width: 100%; }
 .portfolio .row .column {
@@ -96,8 +122,11 @@ li {
   color: white; }
   .video .row {
     padding: 80px 0; }
-    .video .row h2 {
+    .video .row .title_h2 {
       padding-bottom: 40px; }
+      .video .row .title_h2 .hr_title {
+        border-top: 2px white solid;
+        width: 50px; }
     .video .row p {
       padding-bottom: 0.5rem;
       font-size: 14px; }
@@ -105,6 +134,12 @@ li {
       color: #353f46;
       padding: 15px 40px;
       border: 2px #353f46 solid; }
+    @media only screen and (max-width: 768px) {
+      .video .row .vimeo {
+        padding-top: 80px; }
+        .video .row .vimeo object {
+          width: 100%;
+          height: 100%; } }
 
 .twitter {
   background-color: #4bcaff;
@@ -116,6 +151,11 @@ li {
   .twitter .content_title {
     display: flex;
     justify-content: space-between; }
+    .twitter .content_title .hr_title {
+      border-top: 2px white solid;
+      width: 50px; }
+    .twitter .content_title i {
+      font-size: 30px; }
   .twitter .content_text {
     font-size: 28px;
     padding-top: 40px;
@@ -127,6 +167,9 @@ li {
   background-size: cover;
   background-position: center;
   color: white; }
+  .photographer .hr_title {
+    border-top: 2px white solid;
+    width: 50px; }
   .photographer h2 {
     padding-top: 100px; }
   .photographer .row {
@@ -159,6 +202,9 @@ li {
   .testimonial .content_title {
     display: flex;
     justify-content: space-between; }
+    .testimonial .content_title .hr_title {
+      border-top: 2px #515f67 solid;
+      width: 50px; }
   .testimonial .content_text {
     font-size: 28px;
     padding-top: 40px;
@@ -172,8 +218,11 @@ li {
   background-image: url("../images/background_contact.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
-  .contact h2 {
+  .contact .title_h2 {
     padding: 80px 0 50px 0; }
+    .contact .title_h2 .hr_title {
+      border-top: 2px white solid;
+      width: 50px; }
   .contact .input_form {
     display: flex;
     flex-direction: column; }
@@ -186,7 +235,7 @@ li {
     border: 2px white solid;
     width: 100%;
     height: 200px; }
-  .contact button {
+  .contact #submit {
     width: 100%;
     padding: 15px 0;
     margin: 40px 0 80px 0;
@@ -198,6 +247,8 @@ footer {
   background-color: #353f46; }
   footer .row {
     justify-content: space-between; }
+    footer .row .copyright {
+      text-align: right; }
 
 /* Add padding BETWEEN each column (if you want) */
 /* Create three equal columns that floats next to each other */

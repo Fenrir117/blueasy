@@ -3,12 +3,26 @@
   margin: 0;
   padding: 0;
 }
+@import "https://cdn.jsdelivr.net/npm/segoe-fonts@1.0.1/segoe-fonts.min.css";
+
+body{
+  font-family:'Segoe UI';
+}
 
 $colorBlue: rgb(111, 162, 204);
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+h2{
+  font-family: 'Segoe UI Light';
+  font-size: 30px;
+}
+
+p{
+  font-family: 'Segoe UI';
 }
 
 li {
@@ -21,88 +35,90 @@ li {
   background-size: cover;
   padding-left: 0 !important;
   padding-right: 0 !important;
-  .bg-header{
+  .bg-header {
     background-color: rgba(145, 145, 145, 0.8);
     height: 120px;
-   position: fixed !important;
-  z-index: 5;
-  #logo{
-    font-size: 30px;
-    span{
-      color: rgb(111, 162, 204);
+    position: fixed !important;
+    z-index: 5;
+    #logo {
+      font-size: 30px;
+      span {
+        color: rgb(111, 162, 204);
+      }
     }
-  }
-  nav {
-    height: 100%;
-    
-   
-    .nav-link {
-      color: white !important;
-      border: 2px transparent solid;
-      padding: 11px;
-      font-size: 14px;
-    }
+    nav {
+      height: 100%;
 
-    .active{
-      color: rgb(75, 202, 255) !important;
-      border: 2px rgb(75, 202, 255) solid;
-      padding: 11px;
-    }
-    .nav-link:hover {
-      color: rgb(75, 202, 255) !important;
-      border: 2px rgb(75, 202, 255) solid;
-      padding: 11px;
+      .nav-link {
+        color: white !important;
+        border: 2px transparent solid;
+        padding: 11px;
+        font-size: 14px;
+      }
+
+      .active {
+        color: rgb(75, 202, 255) !important;
+        border: 2px rgb(75, 202, 255) solid;
+        padding: 11px;
+      }
+      .nav-link:hover {
+        color: rgb(75, 202, 255) !important;
+        border: 2px rgb(75, 202, 255) solid;
+        padding: 11px;
+      }
     }
   }
-}
 }
 
 .hero {
- padding: 400px 0 260px 0;
+  padding: 400px 0 260px 0;
 
-      h1 {
-        color: white;
-        font-family: "Segoe UI";
-        font-weight: 300;
-        font-size: 42px;
-        line-height: 1.8;
-        // @media only screen and (max-width: 991px) {
-        //   font-size: 32px;
-        // }
-        // @media only screen and (max-width: 991px) {
-        //   font-size: 22px;
-        // }
-        // @media only screen and (max-width: 991px) {
-        //   font-size: 32px;
-        // }
-      }
+  h1 {
+    color: white;
+    font-family: "Segoe UI Light";
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 1.8;
+    // @media only screen and (max-width: 991px) {
+    //   font-size: 32px;
+    // }
+    // @media only screen and (max-width: 991px) {
+    //   font-size: 22px;
+    // }
+    // @media only screen and (max-width: 991px) {
+    //   font-size: 32px;
+    // }
+  }
 
-    
-
-      .titleTop {
- background-color: rgba(145, 145, 145, 0.8);
-        margin: auto;
-      }
-      .titleBottom {
-        background-color: rgba(145, 145, 145, 0.8);
-        margin: auto;
-      }
-    }
-  
+  .titleTop {
+    background-color: rgba(145, 145, 145, 0.8);
+    margin: auto;
+  }
+  .titleBottom {
+    background-color: rgba(145, 145, 145, 0.8);
+    margin: auto;
+  }
+}
 
 .services {
   background-color: rgb(75, 202, 255);
+  .hr_title {
+    border-top: 2px white solid;
+    width: 50px;
+  }
   .row {
     padding-bottom: 80px;
   }
-
-  h2 {
-    font-size: 30px;
-    font-family: "Segoe UI";
-    color: white;
-    font-weight: 300;
+  .title_h2 {
     padding: 80px 0 40px 0;
+    h2 {
+      font-size: 30px;
+      font-family: "Segoe UI";
+      color: white;
+      font-weight: 300;
+    }
   }
+
   h3 {
     font-size: 24px;
     font-family: "Segoe UI";
@@ -121,25 +137,41 @@ li {
 .portfolio {
   .title_portfolio {
     padding: 80px 0;
-    ul {
-      display: flex;
-      justify-content: space-between;
-      width: 50%;
-      margin: auto 0;
+    .hr_title {
+      border-top: 2px black solid;
+      width: 50px;
+    }
+
+    #myBtnContainer {
+      justify-content: flex-end;
+      button {
+            @media only screen and (max-width: 768px) {
+      font-size: 12px;
+    }
+      }
     }
   }
-  .row{
-    img{
+  .row {
+    .content{
+      position: relative;
+    }
+    .hover{
+      position: absolute;
+      top: 10px;
+      display: none;
+    }
+     .content:hover .hover {
+      display: block;
+    }
+    img {
       width: 100%;
     }
-  .column{
-    padding: 0;
+    .column {
+      padding: 0;
+    }
   }
-}
   .rowBottom {
     padding-bottom: 80px;
-
-
   }
 }
 .video {
@@ -147,8 +179,12 @@ li {
   color: white;
   .row {
     padding: 80px 0;
-    h2 {
+    .title_h2 {
       padding-bottom: 40px;
+      .hr_title {
+        border-top: 2px white solid;
+        width: 50px;
+      }
     }
     p {
       padding-bottom: 0.5rem;
@@ -158,6 +194,16 @@ li {
       color: rgb(53, 63, 70);
       padding: 15px 40px;
       border: 2px rgb(53, 63, 70) solid;
+    }
+
+    .vimeo{
+        @media only screen and (max-width: 768px) {
+       padding-top: 80px;
+       object{
+         width: 100%;
+         height: 100%;
+       }
+     }
     }
   }
 }
@@ -173,6 +219,13 @@ li {
   .content_title {
     display: flex;
     justify-content: space-between;
+    .hr_title {
+      border-top: 2px white solid;
+      width: 50px;
+    }
+    i {
+      font-size: 30px;
+    }
   }
   .content_text {
     font-size: 28px;
@@ -187,6 +240,10 @@ li {
   background-size: cover;
   background-position: center;
   color: white;
+  .hr_title {
+    border-top: 2px white solid;
+    width: 50px;
+  }
   h2 {
     padding-top: 100px;
   }
@@ -211,14 +268,12 @@ li {
           padding: 20px;
           font-size: 30px;
         }
-        a:hover{
+        a:hover {
           color: rgb(75, 202, 255);
           border: 2px rgb(75, 202, 255) solid;
           background-color: rgba(250, 250, 250, 0.9);
         }
       }
-
-
     }
   }
 }
@@ -233,6 +288,10 @@ li {
   .content_title {
     display: flex;
     justify-content: space-between;
+    .hr_title {
+      border-top: 2px rgb(81, 95, 103) solid;
+      width: 50px;
+    }
   }
   .content_text {
     font-size: 28px;
@@ -250,9 +309,12 @@ li {
   background-image: url("../images/background_contact.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
-  h2 {
+  .title_h2 {
     padding: 80px 0 50px 0;
+    .hr_title {
+      border-top: 2px white solid;
+      width: 50px;
+    }
   }
   .input_form {
     display: flex;
@@ -270,7 +332,7 @@ li {
     width: 100%;
     height: 200px;
   }
-  button {
+  #submit {
     width: 100%;
     padding: 15px 0;
     margin: 40px 0 80px 0;
@@ -284,17 +346,14 @@ footer {
   background-color: rgb(53, 63, 70);
   .row {
     justify-content: space-between;
+
+    .copyright {
+      text-align: right;
+    }
   }
 }
 
-
-
-
-
-
 // Test filtre javascript
-
-
 
 /* Add padding BETWEEN each column (if you want) */
 
@@ -305,7 +364,7 @@ footer {
   display: none; /* Hide columns by default */
 }
 
-/* Clear floats after rows */ 
+/* Clear floats after rows */
 .row:after {
   content: "";
   display: table;
@@ -332,7 +391,7 @@ footer {
   cursor: pointer;
 }
 
-.btn:focus{
+.btn:focus {
   box-shadow: none;
 }
 
@@ -343,7 +402,7 @@ footer {
   padding: 11px;
 }
 
-.active_portfolio{
+.active_portfolio {
   color: rgb(75, 202, 255) !important;
   border: 2px rgb(75, 202, 255) solid;
   padding: 11px;
@@ -351,6 +410,5 @@ footer {
 
 /* Add a dark background color to the active button */
 .btn.active {
-  
-   color: black;
+  color: black;
 }
